@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Vikings - Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" class="logo mx-3">Thrift Vikings
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="Sign">
+                <button class="btn btn-outline-info mx-1 my-2 my-lg-0 p-1" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">Login</button>
+                <button class="btn btn-outline-info mx-2 my-2 my-lg-0 p-1" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">Signup</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Thrift Vikings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group my-2">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control my-2" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted my-2">We'll never share your email with
+                                anyone else.</small>
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input my-2" id="exampleCheck1">
+                            <label class="form-check-label my-1" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary my-2">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get started with Thrift Vikings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Enter your name</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea2" rows="1"></textarea>
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control my-2" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted my-2">We'll never share your email with
+                                anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Enter you adress</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="exampleInputPassword1">Confrim Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input my-2" id="exampleCheck1">
+                            <label class="form-check-label my-1" for="exampleCheck1">Become a member</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary my-2">Get a Thrift Vikings account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h1 class="text-center mb-4">Your Cart</h1>
+ 
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+
+            </tbody>
+        </table>
+        <div class="text-end">
+            <h3 id="cart-total" class="rs">Total: Rs 0.00</h3>
+            <button class="btn btn-outline-info" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2022 Thrift Vikings. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItems = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                cartItems.innerHTML += `
+            <tr>
+                <td>${item.name}</td>
+                <td>Rs ${item.price}</td>
+                <td>${item.quantity}</td>
+                <td>Rs ${itemTotal}</td>
+                <td><button onclick="removeFromCart(${item.id})" class="btn btn-danger">Remove</button></td>
+            </tr>
+        `;
+            });
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<tr><td colspan="5">Cart is empty</td></tr>';
+            }
+
+            cartTotal.textContent = `Total: Rs ${total}`;
+        }
+        function removeFromCart(productId) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart = cart.filter(item => item.id !== productId);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+        function checkout() {
+            alert('Thank you for your purchase!');
+            localStorage.removeItem('cart');
+            loadCart();
+        }
+        window.onload = loadCart;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Vikings - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" class="logo mx-3">Thrift Vikings
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="Sign">
+                <button class="btn btn-outline-info mx-1 my-2 my-lg-0 p-1" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">Login</button>
+                <button class="btn btn-outline-info mx-2 my-2 my-lg-0 p-1" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">Signup</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Thrift Vikings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group my-2">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control my-2" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted my-2">We'll never share your email with
+                                anyone else.</small>
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input my-2" id="exampleCheck1">
+                            <label class="form-check-label my-1" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary my-2">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get started with Thrift Vikings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Enter your name</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea2" rows="1"></textarea>
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control my-2" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted my-2">We'll never share your email with
+                                anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Enter you adress</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="exampleInputPassword1">Confrim Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input my-2" id="exampleCheck1">
+                            <label class="form-check-label my-1" for="exampleCheck1">Become a member</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary my-2">Get a Thrift Vikings account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">About Us</h1>
+        <div class="card mb-3" style="max-width: 1100px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="Screenshot 2024-12-28 at 19-02-04 Untitled design - Instagram Post.png"
+                        class="img-fluid rounded-start" alt="Clothes">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body aboutcard">
+                        <h1 class="card-title">How we started</h1>
+                        <p class="card-text">
+                            Thrift Vikings began two years ago with a simple idea that originated from a conversation among three friends. Sitting together,
+                            we realized how much clothing there was in our wardrobe wore only once or twice, which was now perceived as out-dated under the everchanging nature of
+                            trends. That is when one of us gave the idea of selling pre-loved clothes or selling thrift clothes and giving them a new life.
+                            Although it started as a fun business, it gradually gained succes, all because of the fact that the idea resonated with the people's minds.
+                            Motivated by its popularity, we worked to transform the idea into a thriving online business. Today, the platform is dedicated to help sustain fashion,
+                            helping others recycle and find unique & affordable style, all while making a positive impact on the planet.
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Thrift Vikings: Transforming pre-loved clothes into sustainable style.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 1100px;">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body aboutcard">
+                        <h2 class="card-title">Our Mission</h2>
+                        <p class="card-text">At Thrift Vikings, we believe that every piece of fabric has a story to tell. Our mission is to preserve the history these clothes have
+                            and at the same time, help the Planet by limiting waste.
+                            <br>
+                            We are passionate about creating a community of individuals with a like thought process that value the rich history and creativity of fashion.
+                            <br>
+                            We Promise to work towards a future where the textile and fashion industry is a bit more kinder towards the environment, a future where everyone not only 
+                            finally protects what they currently exploit, but at the same time make it (fashion) a source of good.
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Preserving the past, shaping the future.</small></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="Screenshot 2024-12-28 at 19-07-36 Untitled design - Instagram Post.png"
+                        class="img-fluid rounded-end" alt="clothes again">
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 1100px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="Screenshot 2024-12-28 at 19-08-17 Untitled design - Instagram Post.png"
+                        class="img-fluid rounded-start" alt="more clothes">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body aboutcard">
+                        <h2 class="card-title">Our vision</h2>
+                        <p class="card-text">We envision a world where clothing is not just based around trends, but also about witholding a person's individuality ,sustainibility and living.
+                            <br>
+                            Our aim is to be a catalyst in the world whose purpose it to change the minds of people, promoting the idea that second hand clothing is
+                            not only stylish but also a vital component towards a sustainable future.
+                            <br>
+                            Thrift Vikings devotes itself towards fostering a community that celebrates creativity, self expression and the timeless nature of vintage and thrifted clothes.
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Every cloth has a story to tell.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 1100px;">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body aboutcard">
+                        <h2 class="card-title">What we offer</h2>
+                        <p class="card-text">At Thrift Vikings, we offer a colletion of high quality pre-loved items.From unique vintage treasures to daily items, our collection contains every taste.
+                            It doesn't matter whether you're searching for fabric that have a retro style to it or if you want a modern classic, we will provide you 
+                            with an eco friendly shopping experience that will help develop your individual style.
+                        </p>
+                            <p class="card-text"><small class="text-body-secondary">A piece for every taste.</small></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="4.png"
+                        class="img-fluid rounded-end" alt="clothes again">
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 1100px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="5.png"
+                            class="img-fluid rounded-start" alt="more clothes">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body aboutcard">
+                            <h2 class="card-title">Quality that you can trust</h2>
+                            <p class="card-text">
+                                In this family, we make sure to pick out only the finest and the best items to put at your disposal,
+                                ensuring that they meet your standards for quality and durability.
+                                Every piece of cloth and every other item is carefully chosen to offer you a long lasting fashionable experience.
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary">Quality, Style and Durability.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="card mb-3" style="max-width: 1100px;">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body aboutcard">
+                        <h2 class="card-title">Why choose us?</h2>
+                        <p class="card-text">
+                            <h4 class="mt-2">
+                                1- No compromise on Quality
+                            </h4>
+                            We carefully elect the clothes to be on your disposal, ensuring that they offer a sustainable and durable expereince. <br>
+                            <h4>
+                                2- Affordable Products
+                            </h4>
+                            This one is pretty self explanatory ;) <br>
+                            <h4>
+                                3- Community focused
+                            </h4>
+                            Join a community of like minded individuals that seek to contribute towards a better and greener future.
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">
+                            Unique and sustainable at affordable prices.
+                        </small></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="6.png"
+                        class="img-fluid rounded-end" alt="clothes again">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2022 Thrift Vikings. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
